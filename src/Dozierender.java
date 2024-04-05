@@ -32,4 +32,9 @@ public class Dozierender {
 
         System.out.println(name + " beantwortet die Frage von " + student.getName() + ": " + antwort);
     }    
+    public void feedbackErhalten(String topic, Student student, String name) {
+
+        System.out.println(student.getName() + ", bitte geben Sie dem Dozenten " + name + " Feedback zu folgendem Thema: " + topic);
+
+    }
 }
