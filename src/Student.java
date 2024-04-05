@@ -12,7 +12,7 @@ public class Student {
     this.professor = professor;
   }
 
-  public void askQuestion (String question, String name, Dozent professor) {
+  public void askQuestion (String question, String name, Dozierender professor) {
     System.out.println(name + " stellt eine Frage an " + professor.getName());
     System.out.println("Frage: " + question);
   }
