@@ -3,16 +3,16 @@ public class Student {
   private String name;
   private int matNr;
   private String course;
-  private Dozent professor;
+  private Dozierender professor;
 
   
 
-  public Student (String name, Dozent professor) {
+  public Student (String name, Dozierender professor) {
     this.name = name;
     this.professor = professor;
   }
 
-  public void askQuestion (String question, String name, Dozent professor) {
+  public void askQuestion (String question, String name, Dozierender professor) {
     System.out.println(name + " stellt eine Frage an " + professor.getName());
     System.out.println("Frage: " + question);
   }
