@@ -3,17 +3,17 @@ public class Student {
   private String name;
   private int matNr;
   private String course;
-  private Dozent professor;
+  private Dozierender professor;
 
   
 
-  public Student (String name, Dozent professor) {
+  public Student (String name, Dozierender professor) {
     this.name = name;
     this.professor = professor;
   }
 
-  public void askQuestion (String question, String name, Dozent professor) {
-    System.out.println(name + " stellt eine Frage an " + professor.getName());
+  public void askQuestion (String question, Student student, Dozierender professor) {
+    System.out.println(student.getName() + " stellt eine Frage an " + professor.getName());
     System.out.println("Frage: " + question);
   }
 
@@ -41,11 +41,11 @@ public class Student {
     this.course = course;
   }
 
-  public Dozent getProfessor() {
+  public Dozierender getProfessor() {
     return professor;
   }
 
-  public void setProfessor(Dozent professor) {
+  public void setProfessor(Dozierender professor) {
     this.professor = professor;
   }
   
