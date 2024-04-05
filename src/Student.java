@@ -16,6 +16,10 @@ public class Student {
     System.out.println("Frage: " + question);
   }
 
+  public void sendRequest (Student student, Dozierender dozent, String date, String time) {
+    System.out.println(student.name + " möchte eine Anfrage für die Sprechstunde an " dozent.getName() + " am + " date + " um " + time + " stellen.");
+  }
+
   public String getName() {
     return name;
   }
