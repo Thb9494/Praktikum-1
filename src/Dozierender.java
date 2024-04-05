@@ -22,14 +22,10 @@ public class Dozierender {
     public void setBueronummer(String bueronummer) {
         this.bueronummer = bueronummer;
     }
-    public String frageBeantworten(String antwort, Student student, String name) {
+    public void frageBeantworten(String antwort, Student student, String name) {
 
 
-        System.out.println("Frage an " + dozent + ": " + frage);
-
-        antwort = Input.readString();
-
-        return antwort;
+        System.out.println(name + "Antwort an " + student + ": " + antwort);
     }
 
     
