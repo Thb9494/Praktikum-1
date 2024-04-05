@@ -3,6 +3,12 @@ public class Dozierender {
     private String name;
     private String fakultaet;
     private String bueronummer;
+
+    public Dozierender (String name, String fakultaet, String bueronummer) {
+        this.name = name;
+        this.fakultaet = fakultaet;
+        this.bueronummer = bueronummer;
+    }
    
     public String getName() {
         return name;
@@ -24,10 +30,6 @@ public class Dozierender {
     }
     public void frageBeantworten(String antwort, Student student, String name) {
 
-
-        System.out.println(name + "Antwort an " + student + ": " + antwort);
-    }
-
-    
-
+        System.out.println(name + "beantwortet die Frage von " + student + ": " + antwort);
+    }    
 }
