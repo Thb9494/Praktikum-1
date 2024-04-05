@@ -30,6 +30,6 @@ public class Dozierender {
     }
     public void frageBeantworten(String antwort, Student student, String name) {
 
-        System.out.println(name + "beantwortet die Frage von " + student.getName() + ": " + antwort);
+        System.out.println(name + " beantwortet die Frage von " + student.getName() + ": " + antwort);
     }    
 }
