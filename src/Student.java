@@ -12,7 +12,7 @@ public class Student {
     this.professor = professor;
   }
 
-  public void askQuestion (String question, String name, Dozierender professor) {
+  public void askQuestion (String question, String name, Dozent professor) {
     System.out.println(name + " stellt eine Frage an " + professor.getName());
     System.out.println("Frage: " + question);
   }
@@ -41,11 +41,11 @@ public class Student {
     this.course = course;
   }
 
-  public Dozent getProfessor() {
+  public Dozierender getProfessor() {
     return professor;
   }
 
-  public void setProfessor(Dozent professor) {
+  public void setProfessor(Dozierender professor) {
     this.professor = professor;
   }
   
